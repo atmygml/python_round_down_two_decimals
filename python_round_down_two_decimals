@@ -1,0 +1,10 @@
+import random
+import string
+from decimal import *
+
+item_price_001 = random.randint(10, 200)
+item_price_002 = Decimal(item_price_001).quantize(Decimal('.01'), rounding=ROUND_DOWN)
+
+
+# convert to string
+item_price_003 = str(item_price_002)
